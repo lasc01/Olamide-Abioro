@@ -30,13 +30,19 @@ body{
 }
 
 /* media query for toggler */
+@media screen and (max-width: 1150px) {
+    .nav a{
+        left: 17%;
+    }
+}
+
 
 @media screen and (max-width: 700px) {
   
     .nav a{
         display: block;
         font-size: 1.2rem;
-        width: 18%;
+        width: 30%;
         text-align: left;
         margin-left: -30%;
         margin-top: 2%;
@@ -98,9 +104,10 @@ a{
 
 .skill_row{
     line-height: 2;
-    margin: 50px auto 50px;
+    margin: 50px auto;
+    padding: 0 0 1rem;
     text-align: left;
-    width: 50%;
+    width: 60%;
 }
 
 
@@ -113,7 +120,13 @@ a{
 .skills_pic2{
     width: 10rem;
     float: right;
-    margin-left: 30px;
+    margin-left: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .skills_pic2{
+        float: left;
+    }
 }
 
 .ppic{
@@ -227,4 +240,8 @@ button:hover{
 .work-prof{
     margin-bottom: -10%;
     padding-bottom: 20%;
+}
+
+.mountain-top{
+    width: 10px !important;
 }
