@@ -29,7 +29,7 @@
         My name is Olamide
         </h1>
         <h2>
-        I am a web developer
+        I am a data analyst
         </h2>
         <img class="b_class" src="images/welcome.png" alt="cloud-img">
         <img style="width:50%" class="mountain-pic" src="images/mountain-2.png" alt="mountain-img">
@@ -39,32 +39,38 @@
         <div id="about" class="profile profile-about">
           <img class="ppic" src="images/profpic.png" alt="picture of me">
           <h2>Hello.</h2>
-          <p>I work as a web designer/developer in Lagos, 
-             Nigeria. I'm passionate about assisting individuals 
-            in creating astounding websites for web and mobile 
-            devices. <br>
-            I discovered my affinity for coding after
-            having earned a Bsc. in Physics from the
-            Federal University of Agriculture in Abeokuta.
-            Since then, I've acquired a plethora of experience
-            designing and developing web and mobile
-            applications. <br>
-            My first project as a web designer was in April of
-            2019, when I designed a website for "DJ Lasc Music 
-            Empire" using WordPress. I then continued by enrolling
-            in some online courses on AQskills and Udemy in 
-            order to improve my web design skills
-            and also learn web development. <br>
-            Since then, I've been assisting businesses and companies 
-            in designing and developing fantastic websites for
-            web and mobile devices.    
+          <p>I currently work as a Data Analyst at Imola Schools in 
+            Lagos, Nigeria. I have a strong passion for analyzing 
+            complex data and turning it into meaningful insights that 
+            can drive informed decision <br>
+            I discovered my passion for IT during the COVID-19 lockdown, 
+            which led me to explore various IT courses, including web design, 
+            graphic design, and web development. In 2022, I decided to pursue a 
+            career in data analytics. Thanks to the coding skills I had already 
+            gained from my web development courses, transitioning into data 
+            analytics was a smooth process. To further solidify my skills, 
+            I took on a one-year internship in 2023, which lasted from January 
+            2023 to January 2024. Following the internship, I secured a position 
+            as a Data Analyst at Imola Schools in January 2024, where I am 
+            currently employed. <br>
+            I am proficient in data cleaning, data manipulation, data visualization, 
+            analytical thinking, report writing, and more, using up-to-date tools 
+            like Python (NumPy, Pandas, Matplotlib), Excel, SQL, and others. <br>
+            One of my key achievements as a data analyst was creating a form to 
+            gather data from the parents of students at my school. Through 
+            analyzing this data, I discovered that most parents were either 
+            traders or civil servants, which meant they had irregular income 
+            streams. Based on these insights, I developed a tailored payment 
+            plan where traders could make weekly payments, and civil servants 
+            could pay monthly. This application of data analytics significantly 
+            improved the school’s cash flow management.
           </p>
         </div>
         <hr>
         <div id="contact" class="contact_me">
           <h2>Get In Touch</h2>
           <h3>I am readily accessible for freelance work.</h3>
-          <p>Please notify me now to get started on that project of getting a fancy website for your business.</p>
+          <p>Please notify me now to get started on that project for your business.</p>
           <button><a href="mailto:olamideabioro@gmail.com">CONTACT ME</a></button>
         </div>
       </div>
@@ -74,9 +80,12 @@
         <a class="footer-link" href="https://www.linkedin.com/in/abioro-olamide-481727177/">LinkedIn</a>
         <a class="footer-link" href="https://twitter.com/hollamyday02?t=kz7QS0-zx2zt9ZtS8QOqLA&s=08">Twitter</a>
         <a class="footer-link" href="https://Instagram.com/olamideabioro/">Instagram</a>
-        <p>© 2022 Abioro Olamide.</p>
+        <p>© <span id="year"></span> Abioro Olamide.</p>
       </div>
-      
+ <script>
+        // Get the current year using JavaScript
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 <script src="index.js"></script>
 </body>
 </html>
