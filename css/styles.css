@@ -151,10 +151,6 @@ a{
     margin: 0 auto 0;
 }
 
-.middle_container image{
-    width: 50%
-}
-
 .middle_container p{
     line-height: 2;
 }
@@ -237,7 +233,7 @@ button:hover{
 
 /* styles for work page */
 .work-pic{
-    width: 30rem;
+    width: 20rem;
     margin: 50px auto 0;
 }
 
