@@ -237,6 +237,17 @@ button:hover{
     margin: 50px auto 0;
 }
 
+.profile p{
+    text-align: left;
+}
+.profile a{
+    text-align: left;
+}
+.profile ul{
+    text-align: left;
+}
+
+
 .work-prof{
     margin-bottom: -10%;
     padding-bottom: 2%;
