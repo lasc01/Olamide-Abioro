@@ -15,134 +15,134 @@
 <body>
 
   
-    <div class="top_container">
-      <i class="fa-solid fa-bars the-icon" onclick="myFunc()"></i>
-      <div class = "nav">
-        <a href="index.html" class="my-bar"> Home</a>
-        <a href="#about" class="my-bar"> About me</a>
-        <a href="work.html" class="my-bar"> Projects </a>
-        <a href="#contact" class="my-bar"> contact me</a>
-      </div>
+  <div class="middle_container" style="max-width:1100px; margin:0 auto; padding:24px 16px;">
 
-        <img class="t_class" src="images/cloudy-day.png" alt="cloud-img">
-        <h1>
-        My name is Olamide
-        </h1>
-        <h2>
-        I am a data analyst
-        </h2>
-        <img class="b_class" src="images/welcome.png" alt="cloud-img">
-        <img style="width:50%" class="mountain-pic" src="images/mountain-2.png" alt="mountain-img">
+  <div class="portfolio_intro" style="text-align:center; margin-bottom:24px;">
+    <h2 style="margin:0 0 10px 0;">Projects</h2>
+    <p style="margin:0; max-width:720px; margin-left:auto; margin-right:auto; line-height:1.6;">
+      Here are a few projects I have worked on. Each one includes a short summary, what I built, tools used, and links to the full case study.
+    </p>
+  </div>
+
+  <div class="projects_grid" style="display:flex; flex-wrap:wrap; gap:22px; justify-content:center; align-items:stretch;">
+
+    <div class="project_card" style="width:320px; background:#ffffff; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,0.08); padding:18px; text-align:left; display:flex; flex-direction:column;">
+      <h3 style="margin:0 0 6px 0;">Power BI Sales Dashboard</h3>
+      <p class="project_subtitle" style="margin:0 0 12px 0; opacity:0.8;">
+        AdventureWorks performance, returns, customers, and pricing simulator
+      </p>
+
+      <p style="margin:0 0 12px 0; line-height:1.6;">
+        I built a Power BI report that helps a decision maker track revenue, profit, orders, and returns, then drill into products, regions, and customers. It also includes a pricing simulation to test how price changes may impact profit and targets.
+      </p>
+
+      <h4 style="margin:6px 0 8px 0;">Highlights</h4>
+      <ul style="margin:0 0 12px 18px; padding:0; line-height:1.6;">
+        <li>Executive overview with KPI cards, trend analysis, top categories, and return signals</li>
+        <li>Geography view to compare regional demand and focus</li>
+        <li>Product page with targets and a price adjustment slider showing adjusted profit vs actual profit over time</li>
+        <li>Customer page with revenue per customer, top customers ranking, and segmentation</li>
+      </ul>
+
+      <p class="tools_row" style="margin:0 0 10px 0;">
+        <strong>Tools:</strong> Power BI, Power Query, DAX, data modelling
+      </p>
+
+      <p class="links_row" style="margin:0 0 12px 0;">
+        <a href="PUT_PBIX_OR_REPO_LINK_HERE" target="_blank">Project files</a>
+        <span style="padding:0 8px;">|</span>
+        <a href="powerbi_adventureworks_case_study.html">Case study</a>
+        <span style="padding:0 8px;">|</span>
+        <a href="PUT_VIDEO_LINK_HERE" target="_blank">Demo video</a>
+      </p>
+
+      <img class="project_image"
+           src="images/powerbi_overview.png"
+           alt="Power BI dashboard preview"
+           style="width:100%; height:180px; object-fit:cover; border-radius:12px; margin-top:auto;">
     </div>
 
-    <div class="middle_container">
-      <div class="portfolio_intro">
-        <h2>Projects</h2>
-        <p>
-          Here are a few projects I have worked on, each one includes a short summary, what I built, tools used, and links to the full case study.
-        </p>
-      </div>
-    
-      <div class="projects_grid">
 
-           <div class="project_card">
-          <h3>Power BI Sales Dashboard</h3>
-          <p class="project_subtitle">AdventureWorks performance, returns, customers, and pricing simulator</p>
-    
-          <p>
-            I built a Power BI report that helps a decision maker track revenue, profit, orders, and returns, then drill into products, regions, and customers. It also includes a pricing simulation to test how price changes may impact profit and targets.
-          </p>
-    
-          <h4>Highlights</h4>
-          <ul>
-            <li>Executive overview with KPI cards, trend analysis, top categories, and return signals</li>
-            <li>Geography view to compare regional demand and focus</li>
-            <li>Product page with targets and a price adjustment slider showing adjusted profit vs actual profit over time</li>
-            <li>Customer page with revenue per customer, top customers ranking, and segmentation</li>
-          </ul>
-    
-          <p class="tools_row">
-            <strong>Tools:</strong> Power BI, Power Query, DAX, data modelling
-          </p>
-    
-          <p class="links_row">
-            <a href="PUT_PBIX_OR_REPO_LINK_HERE" target="_blank">Project files</a>
-            <span> </span>
-            <a href="powerbi_adventureworks_case_study.html">Case study</a>
-            <span> </span>
-            <a href="PUT_VIDEO_LINK_HERE" target="_blank">Demo video</a>
-          </p>
-    
-          <img class="project_image" src="images/powerbi_overview.png" alt="Power BI dashboard preview">
-        </div>
-    
-        <div class="project_card">
-          <h3>Personalized Music Recommendation</h3>
-          <p class="project_subtitle">Age and personality based music mood prediction</p>
-    
-          <p>
-            I built models that connect user attributes, personality traits, and listening patterns to predict music mood and improve recommendation relevance.
-          </p>
-    
-          <h4>Highlights</h4>
-          <ul>
-            <li>Trained Random Forest, XGBoost, SVM, and KNN models</li>
-            <li>Mapped Big Five traits to listening behavior and mood labels</li>
-            <li>Reached 87 percent accuracy for age prediction and 78 percent accuracy for happiness classification</li>
-          </ul>
-    
-          <p class="tools_row">
-            <strong>Tools:</strong> Python, Pandas, Scikit learn, Matplotlib
-          </p>
-    
-          <p class="links_row">
-            <a href="PUT_GITHUB_LINK_HERE" target="_blank">GitHub repo</a>
-            <span> </span>
-            <a href="music_recommendation_case_study.html">Case study</a>
-          </p>
-    
-          <img class="project_image" src="images/music_rec.png" alt="Music recommendation project visual">
-        </div>
-    
-        <div class="project_card">
-          <h3>Fake News Detection</h3>
-          <p class="project_subtitle">ETL plus NLP pipeline with modelling and insights</p>
-    
-          <p>
-            Built an end to end pipeline that combines multiple sources, transforms the data, engineers features, trains a classifier, and visualizes patterns between real and fake news.
-          </p>
-    
-          <h4>Highlights</h4>
-          <ul>
-            <li>Designed ETL across structured and semi structured sources using PostgreSQL and MongoDB</li>
-            <li>Performed NLP preprocessing and feature engineering for sentiment and readability</li>
-            <li>Trained a TF IDF plus Random Forest model with very high accuracy</li>
-          </ul>
-    
-          <p class="tools_row">
-            <strong>Tools:</strong> Python, NLTK, PostgreSQL, MongoDB, Git
-          </p>
-    
-          <p class="links_row">
-            <a href="PUT_GITHUB_LINK_HERE" target="_blank">GitHub repo</a>
-            <span> </span>
-            <a href="fake_news_case_study.html">Case study</a>
-          </p>
-    
-          <img class="project_image" src="images/lie_detection.jpeg" alt="Fake news project visual">
-        </div>
-    
-       
-    
-      </div>
-    
-      <div id="contact" class="contact_me">
-        <h2>Get In Touch</h2>
-        <h3>I am open for job opportunities.</h3>
-        <p>Kindly contact me with the link below.</p>
-        <button><a href="mailto:olamideabioro@gmail.com">CONTACT ME</a></button>
-      </div>
+    <div class="project_card" style="width:320px; background:#ffffff; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,0.08); padding:18px; text-align:left; display:flex; flex-direction:column;">
+      <h3 style="margin:0 0 6px 0;">Personalized Music Recommendation</h3>
+      <p class="project_subtitle" style="margin:0 0 12px 0; opacity:0.8;">
+        Age and personality based music mood prediction
+      </p>
+
+      <p style="margin:0 0 12px 0; line-height:1.6;">
+        I built models that connect user attributes, personality traits, and listening patterns to predict music mood and improve recommendation relevance.
+      </p>
+
+      <h4 style="margin:6px 0 8px 0;">Highlights</h4>
+      <ul style="margin:0 0 12px 18px; padding:0; line-height:1.6;">
+        <li>Trained Random Forest, XGBoost, SVM, and KNN models</li>
+        <li>Mapped Big Five traits to listening behavior and mood labels</li>
+        <li>Reached 87 percent accuracy for age prediction and 78 percent accuracy for happiness classification</li>
+      </ul>
+
+      <p class="tools_row" style="margin:0 0 10px 0;">
+        <strong>Tools:</strong> Python, Pandas, Scikit learn, Matplotlib
+      </p>
+
+      <p class="links_row" style="margin:0 0 12px 0;">
+        <a href="PUT_GITHUB_LINK_HERE" target="_blank">GitHub repo</a>
+        <span style="padding:0 8px;">|</span>
+        <a href="music_recommendation_case_study.html">Case study</a>
+      </p>
+
+      <img class="project_image"
+           src="images/music_rec.png"
+           alt="Music recommendation project visual"
+           style="width:100%; height:180px; object-fit:cover; border-radius:12px; margin-top:auto;">
     </div>
+
+
+    <div class="project_card" style="width:320px; background:#ffffff; border-radius:14px; box-shadow:0 2px 12px rgba(0,0,0,0.08); padding:18px; text-align:left; display:flex; flex-direction:column;">
+      <h3 style="margin:0 0 6px 0;">Fake News Detection</h3>
+      <p class="project_subtitle" style="margin:0 0 12px 0; opacity:0.8;">
+        ETL plus NLP pipeline with modelling and insights
+      </p>
+
+      <p style="margin:0 0 12px 0; line-height:1.6;">
+        Built a full pipeline that combines multiple sources, transforms the data, engineers features, trains a classifier, and visualizes patterns between real and fake news.
+      </p>
+
+      <h4 style="margin:6px 0 8px 0;">Highlights</h4>
+      <ul style="margin:0 0 12px 18px; padding:0; line-height:1.6;">
+        <li>Designed ETL across structured and semi structured sources using PostgreSQL and MongoDB</li>
+        <li>Performed NLP preprocessing and feature engineering for sentiment and readability</li>
+        <li>Trained a TF IDF plus Random Forest model with very high accuracy</li>
+      </ul>
+
+      <p class="tools_row" style="margin:0 0 10px 0;">
+        <strong>Tools:</strong> Python, NLTK, PostgreSQL, MongoDB, Git
+      </p>
+
+      <p class="links_row" style="margin:0 0 12px 0;">
+        <a href="PUT_GITHUB_LINK_HERE" target="_blank">GitHub repo</a>
+        <span style="padding:0 8px;">|</span>
+        <a href="fake_news_case_study.html">Case study</a>
+      </p>
+
+      <img class="project_image"
+           src="images/lie_detection.jpeg"
+           alt="Fake news project visual"
+           style="width:100%; height:180px; object-fit:cover; border-radius:12px; margin-top:auto;">
+    </div>
+
+  </div>
+
+  <div id="contact" class="contact_me" style="text-align:center; margin-top:34px;">
+    <h2 style="margin:0 0 10px 0;">Get In Touch</h2>
+    <h3 style="margin:0 0 10px 0;">I am open for job opportunities.</h3>
+    <p style="margin:0 0 14px 0;">Kindly contact me with the link below.</p>
+    <button style="padding:10px 18px; border-radius:10px; border:none; cursor:pointer;">
+      <a href="mailto:olamideabioro@gmail.com" style="text-decoration:none; color:inherit;">CONTACT ME</a>
+    </button>
+  </div>
+
+</div>
+
 
     <hr>
         <div id="contact" class="contact_me">
