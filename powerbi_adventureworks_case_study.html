@@ -1,6 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abioro Olamide</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&family=Roboto:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e077ff1add.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="top_container">
+    <i class="fa-solid fa-bars the-icon" onclick="myFunc()"></i>
+
+    <div class="nav">
+      <a href="index.html" class="my-bar">Home</a>
+      <a href="about-me.html" class="my-bar">About me</a>
+      <a href="work.html" class="my-bar">Projects</a>
+      <a href="#contact" class="my-bar">Contact me</a>
+    </div>
+
+    <img class="t_class" src="images/cloudy-day.png" alt="cloud image">
+    <h1>My name is Olamide</h1>
+    <h2>I am a data analyst</h2>
+    <img class="b_class" src="images/welcome.png" alt="welcome image">
+    <img style="width:50%" class="mountain-pic" src="images/mountain-2.png" alt="mountain image">
+  </div>
+
+  <div class="middle_container" style="background:#f7f7f7; padding:34px 14px;">
+
+    <div style="max-width:980px; margin:0 auto;">
+
+      <div style="text-align:center; margin-bottom:18px;">
+        <h2 style="margin:0 0 10px 0; font-weight:700;">
+          AdventureWorks Sales Dashboard in Power BI
+        </h2>
+
+        <p style="margin:0 auto; max-width:820px; line-height:1.7; opacity:0.9;">
+          This project is a Power BI report designed for performance monitoring and decision support. It tracks sales growth, profitability, orders, and returns, then allows drill down by product, region, and customer. I also built a pricing simulation so users can test how price changes may affect profit and target performance.
+        </p>
+
+        <p style="margin:14px 0 0 0;">
+          <a href="work.html" style="text-decoration:none; font-weight:600;">Back to Projects</a>
+        </p>
+      </div>
+
+      <div class="project_card"
+        style="background:#ffffff; border-radius:14px; padding:22px; box-shadow:0 2px 14px rgba(0,0,0,0.08); text-align:left;">
+
+        <h3 style="margin:0 0 10px 0;">The problem</h3>
+        <p style="margin:0 0 16px 0; line-height:1.7;">
+          Leadership needs one report that answers three questions quickly. Are we growing, what is driving results, and what decisions can we test before acting.
+        </p>
+
+        <h3 style="margin:0 0 10px 0;">What I built</h3>
+        <ul style="margin:0 0 16px 18px; padding:0; line-height:1.7;">
+          <li>Executive page with revenue, profit, orders, and return rate plus category and product drivers</li>
+          <li>Geography page to compare regional performance and concentration of demand</li>
+          <li>Product page with targets and a pricing slider to simulate adjusted profit</li>
+          <li>Customer page showing unique customers, revenue per customer, top customers, and segmentation</li>
+        </ul>
+
+        <h3 style="margin:0 0 10px 0;">Key insights</h3>
+        <ul style="margin:0 0 16px 18px; padding:0; line-height:1.7;">
+          <li>Return patterns still matter because returns can quietly reduce margin</li>
+          <li>Accessories drive the highest order volume, add ons are a major demand engine</li>
+          <li>Shorts show the highest return tendency, an opportunity for fit and sizing improvements</li>
+          <li>Demand is concentrated in a few regions, regional planning improves marketing and inventory efficiency</li>
+          <li>The pricing simulator quantifies profit sensitivity and supports product level trade offs</li>
+        </ul>
+
+        <h3 style="margin:0 0 8px 0;">Tools used</h3>
+        <p style="margin:0 0 18px 0; line-height:1.7;">
+          Power BI, Power Query, DAX, data modelling
+        </p>
+
+        <h3 style="margin:0 0 12px 0;">Dashboard preview</h3>
+
+        <div style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center;">
+
+          <div style="width:460px; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 1px 10px rgba(0,0,0,0.06);">
+            <img src="images/powerbi_overview.png" alt="Executive overview dashboard"
+              style="width:100%; height:240px; object-fit:cover; display:block;">
+            <p style="margin:0; padding:10px 12px; line-height:1.5; opacity:0.85;">
+              Executive overview, KPIs, trends, category drivers, return signals
+            </p>
+          </div>
+
+          <div style="width:460px; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 1px 10px rgba(0,0,0,0.06);">
+            <img src="images/powerbi_map.png" alt="Geography dashboard"
+              style="width:100%; height:240px; object-fit:cover; display:block;">
+            <p style="margin:0; padding:10px 12px; line-height:1.5; opacity:0.85;">
+              Geography view, demand concentration by region and country
+            </p>
+          </div>
+
+          <div style="width:460px; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 1px 10px rgba(0,0,0,0.06);">
+            <img src="images/powerbi_pricing.png" alt="Pricing simulator dashboard"
+              style="width:100%; height:240px; object-fit:cover; display:block;">
+            <p style="margin:0; padding:10px 12px; line-height:1.5; opacity:0.85;">
+              Product page, targets, pricing slider, adjusted profit versus actual profit
+            </p>
+          </div>
+
+          <div style="width:460px; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 1px 10px rgba(0,0,0,0.06);">
+            <img src="images/powerbi_customers.png" alt="Customer dashboard"
+              style="width:100%; height:240px; object-fit:cover; display:block;">
+            <p style="margin:0; padding:10px 12px; line-height:1.5; opacity:0.85;">
+              Customers page, revenue per customer, top customers, segmentation
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="contact" class="contact_me" style="text-align:center; margin-top:28px;">
+        <h2 style="margin:0 0 10px 0;">Get In Touch</h2>
+        <h3 style="margin:0 0 10px 0;">I am open for job opportunities.</h3>
+        <p style="margin:0 0 14px 0;">Kindly contact me with the link below.</p>
+        <button style="padding:10px 18px; border-radius:10px; border:none; cursor:pointer;">
+          <a href="mailto:olamideabioro@gmail.com" style="text-decoration:none; color:inherit;">CONTACT ME</a>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="bottom_container">
+    <a class="footer-link" href="https://www.linkedin.com/in/abioro-olamide-481727177/">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/hollamyday02?t=kz7QS0-zx2zt9ZtS8QOqLA&s=08">Twitter</a>
+    <a class="footer-link" href="https://Instagram.com/olamideabioro/">Instagram</a>
+    <p>© 2022 Abioro Olamide.</p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -97,4 +244,4 @@
       </div>
 <script src="index.js"></script>
 </body>
-</html> 
+</html>  -->
