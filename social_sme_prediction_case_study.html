@@ -10,30 +10,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/e077ff1add.js" crossorigin="anonymous"></script>
-
+  
   <style>
-    body {
+    /* body {
       margin: 0;
       font-family: Poppins, sans-serif;
       color: #1f2937;
       background: #ffffff;
-    }
+    } */
 
-    .top_container {
+    /* .top_container {
       padding: 24px 16px 10px;
       position: relative;
-    }
+    } */
 
-    .nav {
+    /* .nav {
       display: flex;
       gap: 14px;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       margin-bottom: 10px;
-    }
+    } */
 
-    .my-bar {
+    /* .my-bar {
       text-decoration: none;
       color: #111827;
       font-weight: 600;
@@ -43,13 +43,13 @@
 
     .my-bar:hover {
       background: rgba(17, 24, 39, 0.06);
-    }
+    } */
 
-    .middle_container {
+    /* .middle_container {
       max-width: 1050px;
       margin: 0 auto;
       padding: 18px 16px 40px;
-    }
+    } */
 
     .page_title {
       margin: 10px 0 6px;
@@ -204,16 +204,33 @@
 </head>
 
 <body>
-  <div class="top_container">
+  <!-- <div class="top_container">
     <div class="nav">
       <a href="index.html" class="my-bar">Home</a>
       <a href="index.html#about" class="my-bar">About me</a>
       <a href="work.html" class="my-bar">Projects</a>
       <a href="index.html#contact" class="my-bar">Contact</a>
     </div>
-  </div>
+  </div> -->
 
-  <div class="middle_container">
+    <div class="top_container">
+    <i class="fa-solid fa-bars the-icon" onclick="myFunc()"></i>
+
+    <div class="nav">
+      <a href="index.html" class="my-bar">Home</a>
+      <a href="about-me.html" class="my-bar">About me</a>
+      <a href="work.html" class="my-bar">Projects</a>
+      <a href="#contact" class="my-bar">Contact me</a>
+    </div>
+<!-- 
+    <img class="t_class" src="images/cloudy-day.png" alt="cloud image">
+    <h1>My name is Olamide</h1>
+    <h2>I am a data analyst</h2>
+    <img class="b_class" src="images/welcome.png" alt="welcome image">
+    <img style="width:50%" class="mountain-pic" src="images/mountain-2.png" alt="mountain image"> -->
+    </div>
+
+  <div class="middle_container" style="background:#f3fcfc; padding:34px 14px;">
     <h1 class="page_title">Predictive Social Media Performance for SMEs, Ireland vs Nigeria</h1>
     <p class="page_subtitle">
       I built a multi platform analytics pipeline that collects public posts from SME accounts, stores the data in PostgreSQL, engineers content and timing features, then predicts which posts will land in the high engagement group. The goal was practical, help SMEs understand what works, where it works, and how predictable engagement is across markets.
@@ -266,16 +283,13 @@
       </ul>
 
       <div class="links_row">
-        <a href="PUT_GITHUB_REPO_LINK_HERE" target="_blank" rel="noreferrer">Code and notebooks</a>
-        <a href="PUT_PDF_LINK_HERE" target="_blank" rel="noreferrer">Full report PDF</a>
+        <a href="https://github.com/lasc01/sme-social-prediction" target="_blank" rel="noreferrer">Code and notebooks</a>
+        <a href="https://drive.google.com/file/d/1CtIKL7u0OTMJgHoFBJz5tOv0bxbpio_j/view?usp=sharing" target="_blank" rel="noreferrer">Full report PDF</a>
       </div>
     </div>
 
     <div class="card">
       <h3>Visuals</h3>
-      <p>
-        Add 2 to 4 visuals here. For example, one architecture diagram, one performance chart, one timing heatmap, one feature importance plot. Keep it light, just enough to prove the work.
-      </p>
 
       <div class="image_grid">
         <figure>
@@ -287,6 +301,16 @@
           <img src="images/social_sme_results.png" alt="Model performance preview" />
           <figcaption>Model performance summary, AUC and lift across cohorts.</figcaption>
         </figure>
+
+        <figure>
+          <img src="images/timing_heatmap.png" alt="Model performance preview" />
+          <figcaption>Timing heatmap of one of the sectors(Ireland Fashion).</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/feature_importances.png" alt="Model performance preview" />
+          <figcaption>Top feature importances for Instagram.</figcaption>
+        </figure>
       </div>
     </div>
   </div>
@@ -294,8 +318,11 @@
   <div id="bottom_container">
     <a class="footer-link" href="https://www.linkedin.com/in/abioro-olamide-481727177/">LinkedIn</a>
     <a class="footer-link" href="https://twitter.com/hollamyday02?t=kz7QS0-zx2zt9ZtS8QOqLA&s=08">Twitter</a>
-    <a class="footer-link" href="https://Instagram.com/olamideabioro/">Instagram</a>
-    <p>© 2022 Abioro Olamide.</p>
+    <a class="footer-link" href="https://github.com/lasc01">GitHub</a>
+        <p>© <span id="year"></span> Abioro Olamide.</p>
+        <script>
+          document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
   </div>
 
   <script src="index.js"></script>
