@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Media Engagement Prediction for SMEs</title>
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/e077ff1add.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Poppins, sans-serif;
+      color: #1f2937;
+      background: #ffffff;
+    }
+
+    .top_container {
+      padding: 24px 16px 10px;
+      position: relative;
+    }
+
+    .nav {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .my-bar {
+      text-decoration: none;
+      color: #111827;
+      font-weight: 600;
+      padding: 8px 10px;
+      border-radius: 10px;
+    }
+
+    .my-bar:hover {
+      background: rgba(17, 24, 39, 0.06);
+    }
+
+    .middle_container {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 18px 16px 40px;
+    }
+
+    .page_title {
+      margin: 10px 0 6px;
+      font-size: 30px;
+      line-height: 1.2;
+      letter-spacing: 0.2px;
+      text-align: left;
+    }
+
+    .page_subtitle {
+      margin: 0 0 18px;
+      color: #4b5563;
+      line-height: 1.7;
+      max-width: 850px;
+      text-align: left;
+    }
+
+    .card {
+      background: #ffffff;
+      border: 1px solid rgba(17, 24, 39, 0.10);
+      border-radius: 16px;
+      padding: 18px 16px;
+      box-shadow: 0 10px 25px rgba(17, 24, 39, 0.05);
+      margin-top: 16px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+    }
+
+    .card p, .card li {
+      line-height: 1.8;
+      color: #374151;
+      font-size: 15px;
+    }
+
+    .card ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+
+    .meta_grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .meta_box {
+      background: rgba(17, 24, 39, 0.04);
+      border-radius: 14px;
+      padding: 12px;
+    }
+
+    .meta_label {
+      font-size: 12px;
+      color: #6b7280;
+      margin-bottom: 6px;
+    }
+
+    .meta_value {
+      font-weight: 700;
+      color: #111827;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .image_grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+      align-items: start;
+    }
+
+    .image_grid figure {
+      margin: 0;
+      background: rgba(17, 24, 39, 0.03);
+      border-radius: 14px;
+      padding: 10px;
+      border: 1px solid rgba(17, 24, 39, 0.08);
+    }
+
+    .image_grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+      max-height: 520px;
+      object-fit: contain;
+      background: #ffffff;
+    }
+
+    .image_grid figcaption {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    .links_row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .links_row a {
+      text-decoration: none;
+      font-weight: 700;
+      color: #111827;
+      background: rgba(17, 24, 39, 0.06);
+      padding: 10px 12px;
+      border-radius: 12px;
+    }
+
+    .links_row a:hover {
+      background: rgba(17, 24, 39, 0.10);
+    }
+
+    #bottom_container {
+      padding: 22px 16px 26px;
+      text-align: center;
+      border-top: 1px solid rgba(17, 24, 39, 0.10);
+      color: #374151;
+    }
+
+    .footer-link {
+      margin: 0 8px;
+      color: #111827;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 860px) {
+      .meta_grid {
+        grid-template-columns: 1fr;
+      }
+      .image_grid {
+        grid-template-columns: 1fr;
+      }
+      .page_title {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top_container">
+    <div class="nav">
+      <a href="index.html" class="my-bar">Home</a>
+      <a href="index.html#about" class="my-bar">About me</a>
+      <a href="work.html" class="my-bar">Projects</a>
+      <a href="index.html#contact" class="my-bar">Contact</a>
+    </div>
+  </div>
+
+  <div class="middle_container">
+    <h1 class="page_title">Predictive Social Media Performance for SMEs, Ireland vs Nigeria</h1>
+    <p class="page_subtitle">
+      I built a multi platform analytics pipeline that collects public posts from SME accounts, stores the data in PostgreSQL, engineers content and timing features, then predicts which posts will land in the high engagement group. The goal was practical, help SMEs understand what works, where it works, and how predictable engagement is across markets.
+    </p>
+
+    <div class="card">
+      <h3>Quick snapshot</h3>
+
+      <div class="meta_grid">
+        <div class="meta_box">
+          <div class="meta_label">Data</div>
+          <div class="meta_value">40,217 posts from about 750 SME accounts</div>
+        </div>
+        <div class="meta_box">
+          <div class="meta_label">Platforms</div>
+          <div class="meta_value">Instagram, TikTok, Facebook</div>
+        </div>
+        <div class="meta_box">
+          <div class="meta_label">Models</div>
+          <div class="meta_value">Random Forest and XGBoost with temporal splits</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>The problem</h3>
+      <p>
+        SMEs post consistently, but it is not always clear what platform to prioritise, what content signals matter, and whether what works in one market transfers into another. I wanted a framework that gives evidence, not vibes.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>What I built</h3>
+      <ul>
+        <li>Data acquisition using Apify actors, normalised into a shared PostgreSQL schema</li>
+        <li>Feature engineering around timing, caption structure, hashtags, and account history</li>
+        <li>Cohort based labels that define high engagement within each platform, country, sector context</li>
+        <li>Model training with temporal validation to reduce leakage and simulate future performance</li>
+        <li>Evaluation with AUC plus top decile lift to translate accuracy into business value</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Results and insights</h3>
+      <ul>
+        <li>Best cohorts achieved strong ranking performance, with AUC values reported between 0.80 and 0.93 in the thesis abstract</li>
+        <li>Some cohorts delivered top decile lift above 7, meaning the top ranked ten percent of posts contained over seven times more high engagement posts than random selection</li>
+        <li>Instagram showed stable predictability across both countries, while TikTok was notably more predictable in Nigeria than Ireland</li>
+        <li>Content strategy signals were not linear, caption length effects depended on platform and context, and tree models captured that pattern well</li>
+      </ul>
+
+      <div class="links_row">
+        <a href="PUT_GITHUB_REPO_LINK_HERE" target="_blank" rel="noreferrer">Code and notebooks</a>
+        <a href="PUT_PDF_LINK_HERE" target="_blank" rel="noreferrer">Full report PDF</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Visuals</h3>
+      <p>
+        Add 2 to 4 visuals here. For example, one architecture diagram, one performance chart, one timing heatmap, one feature importance plot. Keep it light, just enough to prove the work.
+      </p>
+
+      <div class="image_grid">
+        <figure>
+          <img src="images/social_sme_architecture.png" alt="Pipeline architecture preview" />
+          <figcaption>Pipeline overview, from scraping to PostgreSQL to modelling.</figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/social_sme_results.png" alt="Model performance preview" />
+          <figcaption>Model performance summary, AUC and lift across cohorts.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div id="bottom_container">
+    <a class="footer-link" href="https://www.linkedin.com/in/abioro-olamide-481727177/">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/hollamyday02?t=kz7QS0-zx2zt9ZtS8QOqLA&s=08">Twitter</a>
+    <a class="footer-link" href="https://Instagram.com/olamideabioro/">Instagram</a>
+    <p>© 2022 Abioro Olamide.</p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
